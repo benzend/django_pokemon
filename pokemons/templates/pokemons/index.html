@@ -1,0 +1,9 @@
+{% if pokemons %}
+<ul>
+  {% for pokemon in pokemons %}
+  <li>
+    <a href="{% url 'pokemons:detail' pokemon.id  %}">{{pokemon.name}}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
