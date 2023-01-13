@@ -23,6 +23,7 @@ POWER_TYPES = [
   ('li', 'Light')
 ]
 
+
 class Person(models.Model):
   first_name = models.CharField(max_length=50)
   last_name = models.CharField(max_length=50)
